@@ -1,0 +1,39 @@
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Estilos adicionales para botones, enlaces y otros componentes de Bootstrap */
+body.dark-mode .btn {
+  background-color: #444444;
+  color: white;
+  border: 1px solid #666;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #555;
+}
+
+body.dark-mode .navbar, body.dark-mode .footer {
+  background-color: #222;
+  color: white;
+}
+
+/* Estilos generales para texto y fondos */
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode p {
+  color: white;
+}
+
+body.dark-mode a {
+  color: #1e90ff;
+}
+
+body.dark-mode a:hover {
+  color: #3399ff;
+}
+
+/* Asegúrate de que el fondo de todo el sitio se oscurezca */
+body.dark-mode .container {
+  background-color: #181818;
+}
