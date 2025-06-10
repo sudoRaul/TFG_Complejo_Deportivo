@@ -52,7 +52,7 @@
 ## ✨ Capturas de Pantalla
 
 ### Home Page 🏠
-![HomePage](./Front-End/screenshots/capturaHomePage.png)
+![HomePage](./Front-End/screenshots/homePage.png)
 
 ---
 
