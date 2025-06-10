@@ -9,7 +9,7 @@ const rol = sesion ? JSON.parse(sesion).rol : null;
 const id = sesion ? JSON.parse(sesion).id : null;
 const token = sessionStorage.getItem("token") || localStorage.getItem("token") || null;
 
-// Redireccianamos al home si no es admin registrado
+// Redireccianamos al home si no tiene un token registrado
 if (!token) {
   router.push("/");
 }

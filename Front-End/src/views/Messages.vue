@@ -71,7 +71,7 @@ onMounted(() => {
 
 <template>
   <div v-if="contactos" class="container mt-5">
-    <h2 class="mb-4 text-center">Contacts' Meassages</h2>
+    <h2 class="mb-4 text-center">Contacts' Messages</h2>
 
     <!-- Condición de carga -->
     <div v-if="loading" class="text-center">
