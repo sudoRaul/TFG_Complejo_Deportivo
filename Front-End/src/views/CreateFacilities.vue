@@ -99,7 +99,7 @@ async function submitForm() {
           <select v-model="newFacility.disponibilidad" class="form-control rounded-pill" name="disponibilidad" id="disp"
             required>
             <option value="" disabled>Select disponibility</option>
-            <option value="yes">Sí</option>
+            <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
         </div>

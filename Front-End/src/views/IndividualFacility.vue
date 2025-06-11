@@ -25,7 +25,7 @@ const categoriaSeleccionada = computed(() => route.params.category)
 async function obtenerInstalaciones() {
   try {
     cargando.value = true
-    const response = await fetch(`http://127.0.0.1:5000/instalaciones?nombre=${categoriaSeleccionada.value}`)
+    const response = await fetch(`http://127.0.0.1:5000/instalaciones?categoria=${categoriaSeleccionada.value}`)
     if (!response.ok) throw new Error('Reserves cannot be found')
     instalaciones.value = await response.json()
   } catch (err) {

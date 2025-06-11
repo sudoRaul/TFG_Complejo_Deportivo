@@ -49,7 +49,7 @@ onMounted(() => {
           <b class="text-primary"> Upcoming</b> opening at our facilities!
         </h2>
         <p class="text-left fs-5 fw-800">
-          Wednesday, June 4th, 2025, come and enjoy our new swimming pool:
+          Friday, June 20th, 2025, come and enjoy our new swimming pool:
         </p>
         <div class="text-left fs-5 fw-800">
           ✅ <b>Free access for all users on the first day.</b><br />

@@ -60,9 +60,9 @@ onMounted(() => {
 
 <template>
     <div v-if="usuarios" class="container py-4">
-        <h1 class="mb-4 text-center">Estadísticas de Usuarios</h1>
+        <h1 class="mb-4 text-center">Users' statistics</h1>
         <div class="mb-3 text-center mb-5">
-            <h3>Edad media de los usuarios: <span class="text-primary">{{ edadMedia }}</span> años</h3>
+            <h3>Users' average age: <span class="text-primary">{{ edadMedia }}</span> años</h3>
         </div>
         <div class="row flex justify-content-around">
             <div class="col-sm-10 col-md-6 col-lg-4 mb-4">

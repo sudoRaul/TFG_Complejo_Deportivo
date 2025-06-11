@@ -13,11 +13,14 @@ bp = Blueprint('instalaciones', __name__, url_prefix='/instalaciones')
 @bp.route('/', methods=['GET'])
 def get_o_filtrar_instalaciones():
     nombre = request.args.get("nombre")  # ejemplo: ?nombre=futbol
+    categoria = request.args.get("categoria")  # ejemplo: ?categoria=football
 
     try:
         query = db.session.query(Instalacion)
 
-        if nombre:
+        if categoria:
+            query = query.filter(Instalacion.categoria.ilike(f"%{categoria}%"))
+        elif nombre:
             query = query.filter(Instalacion.nombre.ilike(f"%{nombre}%"))
 
         instalaciones = query.all()
