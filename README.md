@@ -56,21 +56,50 @@
 
 ---
 
-### Valoración de los usuarios ⭐⭐⭐
-![Usuario](./screenshots/capturaUsuario.png)
+### Reservar una instalación 🧚‍♂️​
+![HomePage](./Front-End/screenshots/reserve.png)
+
+---
+
+
+### Listado de instalaciones 🥅
+![InstalacionesLista](./Front-End/screenshots/allfacilities.png)
+
 
 --- 
 
-### Rutas pendientes de los guías 🚶‍♂️
-![Usuario](./Front-End/screenshots/capturaGuia.png)
+### Instalaciones por categoría 🎾
+![InstalacionesIndividual](./Front-End/screenshots/individualFacility.png)
 
 ---
 
-### Visualización de rutas desde el administrador 🔐
-![Usuario](./Front-End/screenshots/capturaAdmin.png)
-
+### Mis reservas 🏃🏼​
+![MisReservas](./Front-End/screenshots/myReserves.png)
 
 ---
+
+
+### Mi perfil (modo oscuro) 🧑
+![MiPerfil](./Front-End/screenshots/myprofile.png)
+
+---
+
+### Visualizar información de análisis físico ​🧍‍♂️​
+![AnalisisFisico](./Front-End/screenshots/datas.png)
+
+---
+
+
+### Notificaciones, mensajes de los usuarios 📨
+![Notificaciones](./Front-End/screenshots/notifications.png)
+
+---
+
+### Ver estadísticas de los usuarios del centro 📊
+![Estadisticas](./Front-End/screenshots/usersdatas.png)
+
+---
+
 
 ## 🧠 Aprendizajes
 
