@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "b6f76ca1-6da3-4bf2-b95a-abda600f72c0",
+		"name": "Contacto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41526683"
+	},
+	"item": [
+		{
+			"name": "Todos los contactos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/contacto/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"contacto",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contacto por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/contacto/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"contacto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear contacto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Fulano\",\r\n    \"apellido\": \"De tal\",\r\n    \"email\": \"fulano@example.com\",\r\n    \"telefono\": \"629126702\",\r\n    \"comentario\": \"Quisiera información sobre los eventos.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/contacto/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"contacto",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/contacto/1/responder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"respuesta\": \"texto de la respuesta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/contacto/1/responder",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"contacto",
+						"1",
+						"responder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

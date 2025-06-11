@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "0adcc96b-b37a-40d5-abcc-57133a867579",
+		"name": "Instalaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41526683"
+	},
+	"item": [
+		{
+			"name": "Todas las instalaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/instalaciones/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"instalaciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Instalacion por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/instalaciones/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"instalaciones",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Instalacion por nombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/instalaciones?nombre=gimnasio",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"instalaciones"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "gimnasio"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear instalacion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Cancha de Baloncesto\",\r\n    \"categoria\": \"Pista de Pádel\",\r\n    \"disponibilidad\": \"Disponible\",\r\n    \"foto\": \"https://garrampa.es/blog/wp-content/uploads/2022/12/blog-1-a-que-altura-esta-la-canasta-de-baloncesto-768x432-1-1200x675.jpg\",\r\n    \"descripcion\" : \"Fantática pista de Pádel\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/instalaciones",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"instalaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar instalacion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Pista de Pádel\", //Todos los campos son opcionales, es decir para actualizar vale con poner solo uno\r\n  \"categoria\": \"Gimnasio\", \r\n  \"disponibilidad\": \"Disponible\",\r\n  \"foto\": \"https://foto.jpg\",\r\n  \"descripcion\": \"descripcion\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/instalaciones/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"instalaciones",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar instalacion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/instalaciones/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"instalaciones",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
